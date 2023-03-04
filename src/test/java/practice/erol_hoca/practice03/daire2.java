@@ -35,5 +35,6 @@ public class daire2 extends TestBase {
             actions.moveByOffset(i,-y).build().perform();
             y++;
         }
+        waitFor(10);
     }
 }

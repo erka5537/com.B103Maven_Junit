@@ -11,7 +11,6 @@ public class renk extends TestBase {
     @Test
     public void renk(){
 
-
 //     -https://jqueryui.com/slider/#colorpicker adrese gidiniz
         driver.get("https://jqueryui.com/slider/#colorpicker");
 
@@ -25,7 +24,7 @@ public class renk extends TestBase {
         actions.dragAndDropBy(yesil,-170,0).build().perform();
         actions.dragAndDropBy(mavi,-70,0).build().perform();
         waitFor(3);
-        actions.dragAndDropBy(yesil,310,0).build().perform();
-
+        actions.dragAndDropBy(yesil,500,0).build().perform();
+        waitFor(5);
     }
 }

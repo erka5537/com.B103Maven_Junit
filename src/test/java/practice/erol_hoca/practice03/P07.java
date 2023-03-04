@@ -21,7 +21,6 @@ public class P07 extends TestBase {
         actions.moveByOffset(-80,+250).build().perform();
         actions.moveByOffset(80,-250).build().perform();actions.release().perform();
 
-
         actions.clickAndHold().build().perform();
         actions.moveByOffset(80,250).build().perform();
         actions.moveByOffset(-80,-250).build().perform();
@@ -41,19 +40,6 @@ public class P07 extends TestBase {
         actions.moveByOffset(-230,170).build().perform();
         actions.moveByOffset(+230,-170).build().perform();
         actions.moveByOffset(-230,170).build().perform();actions.release().perform();
-
-        for (int i=0; i<20; i++){
-            driver.findElement(By.xpath("//*[@data-action='change-background-color']")).click();
-            Thread.sleep(500);
-        }
-
-//        int x=615;
-//        for (int y=340; y<350; y++){
-//            actions.moveByOffset(x,y).build().perform();
-//            x++;
-//        }
-//        actions.release().perform();
-
 
 //    - Son olarak sayfayı temizleyiniz
 
